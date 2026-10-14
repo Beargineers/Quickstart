@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'org.jetbrains.kotlin.android'
 
 //
 // build.gradle in TeamCode
@@ -24,6 +25,16 @@ android {
     }
 }
 
+// The Control Hub runs Java 8 bytecode, like build.common.gradle sets for Java
+kotlin {
+    compilerOptions {
+        jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_1_8
+    }
+}
+
 dependencies {
     implementation project(':FtcRobotController')
+
+    // https://github.com/Beargineers/BearPlatform
+    implementation 'nl.beargineers.platform:ftc:0.1.0'
 }
