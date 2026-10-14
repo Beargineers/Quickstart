@@ -41,9 +41,8 @@ You need Android Studio Narwhal 3 Feature Drop or later.
 | [Claw.kt](TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Claw.kt)       | An example part to start your own from; not on the robot until you add it |
 | [res/raw/config.properties](TeamCode/src/main/res/raw/config.properties)       | The robot's settings               |
 
-[BearPlatform's README](https://github.com/Beargineers/BearPlatform#readme) explains the rest: parts and their
-settings, gamepad buttons, motors, servos and sensors, driving to poses, and robot code as plain step-by-step
-functions.
+[The BearPlatform manual](https://beargineers.nl/platform/) explains the rest: parts and their settings, gamepad
+buttons, motors, servos and sensors, driving to poses, and robot code as plain step-by-step functions.
 
 ## On the robot
 
