@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: 'org.jetbrains.kotlin.android'
+apply plugin: 'nl.beargineers.platform'
 
 //
 // build.gradle in TeamCode
@@ -36,5 +37,5 @@ dependencies {
     implementation project(':FtcRobotController')
 
     // https://github.com/Beargineers/BearPlatform
-    implementation 'nl.beargineers.platform:ftc:0.1.0'
+    implementation 'nl.beargineers.platform:ftc:0.2.0'
 }

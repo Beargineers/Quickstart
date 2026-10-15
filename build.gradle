@@ -18,6 +18,10 @@ plugins {
 
     // BearPlatform: robot code in Kotlin. At least the Kotlin version BearPlatform was built with.
     id 'org.jetbrains.kotlin.android' version '2.2.20' apply false
+
+    // BearPlatform's tasks that talk to the robot: sendConfig, robotCommand, downloadMatchLogs.
+    // Keep it at the same version as BearPlatform in TeamCode/build.gradle.
+    id 'nl.beargineers.platform' version '0.2.0' apply false
 }
 
 // This is now required because aapt2 has to be downloaded from the

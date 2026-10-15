@@ -54,10 +54,21 @@ With the laptop on the robot's WiFi:
 - http://192.168.43.1:8080/bear/graphs draws live graphs of what the robot records, like the follower's errors
   while Auto drives, and shows the Driver Station's lines.
 
+Gradle tasks talk to the robot too, on Windows as well. In Android Studio they are in the **Gradle** tool window,
+under **TeamCode › Tasks › robot**:
+
+- `sendConfig` sends [config.properties](TeamCode/src/main/res/raw/config.properties) to the robot, where it
+  applies right away.
+- `robotCommand --name="..."` starts a command the running opmode offers; without a name, it lists them.
+- `downloadMatchLogs` downloads FIRST's match logs into `TeamCode/matchLogs`.
+
+Over USB instead of WiFi, add `bear.robot=usb` to [gradle.properties](gradle.properties).
+
 ## Updates
 
-- **BearPlatform**: change the version in [TeamCode/build.gradle](TeamCode/build.gradle). Its release notes say
-  what changed and how to update your code.
+- **BearPlatform**: change the version in [TeamCode/build.gradle](TeamCode/build.gradle), and the plugin's in
+  [build.gradle](build.gradle) to the same. Its [release notes](https://github.com/Beargineers/BearPlatform/releases)
+  say what changed and how to update your code.
 - **The FTC SDK, and this project**: when FIRST releases a new SDK, it comes here too. Pull it into your fork:
 
   ```
